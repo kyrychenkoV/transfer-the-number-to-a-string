@@ -1,6 +1,10 @@
 #include <stdio.h>
+#include <string.h>
+void transferNumbertoString(int n, char s[]);
+void reverseString(char s[]);
+void inputData();
 
-int main(int argc, char *argv[])
+int main()
 {
     inputData();
     return 0;
@@ -30,15 +34,18 @@ void reverseString(char s[])
         s[j] = tmp;
     }
 }
+int test (){
+    int n=-25;
+    return n;
+}
 void inputData(){
-    int n=0;
-    printf("input number\n");
-    scanf("%d",&n);
+    int n=test();
+    //printf("input number\n");
+    //scanf("%d",&n);
     char const size=20;
     char s[size];
-
     printf ("Numder:%d\n",n);
     transferNumbertoString(n,s);
     printf("String:%s\n",s);
-    return 0;
+
 }
